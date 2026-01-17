@@ -47,7 +47,7 @@ sudo apt install iproute2
 git clone https://github.com/Godflay/port-scanner.git
 cd port-scanner
 
-python -m venv .venv
+python -m venv .venv<br/>
 source .venv/bin/activate
 
 python -m pip install -U pip setuptools wheel
@@ -68,9 +68,9 @@ port-audit --json
 
 ## Exit Codes
 Code	Meaning
-0	    No critical findings
-2	    One or more critical findings
-1	    Error during scan or analysis
+0	    No critical findings<br/>
+2	    One or more critical findings<br/>
+1	    Error during scan or analysis<br/>
 
 ## Example output
 <img width="906" height="108" alt="image" src="https://github.com/user-attachments/assets/20c153ad-3ed7-43f2-a749-dd770b3cbd29" />
