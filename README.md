@@ -35,6 +35,8 @@ Python 3.10+
 
 iproute2 (provides the ss command)
 
+pipx
+
 ### On Fedora:
 ```
 sudo dnf install iproute
@@ -60,6 +62,36 @@ source .venv/bin/activate
 python -m pip install -U pip setuptools wheel
 python -m pip install -e .
 ```
+## Installation using pipx (recommended)
+```
+git clone https://github.com/Godflay/port-scanner.git
+cd port-scanner
+```
+### install pipx
+### Fedora:
+```
+sudo dnf install pipx
+```
+or 
+```
+sudo rpm-ostree install pipx
+```
+### Ubuntu
+```
+sudo apt install pipx
+```
+```
+pipx ensurepath
+```
+### From project root
+```
+pipx install .
+```
+### Verify:
+```
+port-audit
+```
+
 ## Usage
 ### run full scan
 ```
