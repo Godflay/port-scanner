@@ -55,7 +55,7 @@ git clone https://github.com/Godflay/port-scanner.git
 cd port-scanner
 ```
 ```
-python -m venv .venv<br/>
+python -m venv .venv
 source .venv/bin/activate
 ```
 ```
