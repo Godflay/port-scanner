@@ -22,6 +22,10 @@ def determine_exposure(ip: str) -> Exposure:
     #handle wildcard addresses
     if ip in ("0.0.0.0", "::"):
         return Exposure.PUBLIC
+
+    ip = ip.split("%", 1)[0]  # Remove zone index if present
+    if ip == "*":
+        return Exposure.PUBLIC
     
     #handle LAN
     if ip_address.is_private:
