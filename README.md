@@ -12,15 +12,15 @@ Scans listening TCP/UDP ports using ss
 
 Classifies exposure:
 
-local (localhost only)
+  -local (localhost only)
 
-lan
+  -lan
 
-public
+  -public
 
 Assigns a risk level:
 
-low, medium, high, critical
+  -low, medium, high, critical
 
 Human-readable table output
 
