@@ -103,8 +103,10 @@ def status(
     except ScannerError as e:
         console.print(f"[bold red]Scanner error:[/bold red] {e}")
         raise typer.Exit(code=1)
-    except Exception as e:
-        console.print(f"[bold red]Unexpected error:[/bold red] {e}")
+    except typer.Exit as e:
+        raise e
+    except Exception:
+        console.print_exception(show_locals=False)
         raise typer.Exit(code=1)
     
 def main()-> None:

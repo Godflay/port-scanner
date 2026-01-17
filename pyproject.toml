@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "port-audit"
+version = "0.1.0"
+description = "Linux-only CLI tool to audit listening network ports and assess exposure risk."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Gabriel Godfrey" }]
+
+dependencies = [
+  "typer>=0.9",
+  "rich>=13.0",
+]
+
+[project.scripts]
+port-audit = "cli.main:main"
+
+[tool.setuptools]
+packages = ["audit", "cli", "utils"]
