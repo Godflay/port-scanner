@@ -44,14 +44,14 @@ sudo rpm-ostree install iproute
 sudo apt install iproute2
 
 ## Installation (dev/local)
-git clone https://github.com/Godflay/port-scanner.git
-cd port-scanner
+git clone https://github.com/Godflay/port-scanner.git\
+cd port-scanner\
 
-python -m venv .venv
-source .venv/bin/activate
+python -m venv .venv\
+source .venv/bin/activate\
 
-python -m pip install -U pip setuptools wheel
-python -m pip install -e .
+python -m pip install -U pip setuptools wheel\
+python -m pip install -e .\
 
 ## Usage
 ### run full scan
@@ -79,12 +79,12 @@ cupsd          631  tcp    127.0.0.1  631   local     low       Service bound to
 
 
 ## General Notes
-Parsing, classification, and risk rules are intentionally decoupled
+Parsing, classification, and risk rules are intentionally decoupled\
 
-Scanner logic is isolated from analysis logic
+Scanner logic is isolated from analysis logic\
 
-This is not a vulnerability scanner — it’s a visibility and risk-awareness tool.
+This is not a vulnerability scanner — it’s a visibility and risk-awareness tool.\
 
 ## Limitations
-Relies on ss output(format may vary slightly between distros)
-Requires sufficient perms to see process information
+Relies on ss output(format may vary slightly between distros)\
+Requires sufficient perms to see process information\
