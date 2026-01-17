@@ -36,42 +36,54 @@ Python 3.10+
 iproute2 (provides the ss command)
 
 ### On Fedora:
+```
 sudo dnf install iproute
-or
+```
+or<br/>
+```
 sudo rpm-ostree install iproute
-
+```
 ### On Debian/Ubuntu
+```
 sudo apt install iproute2
-
+```
 ## Installation (dev/local)
+```
 git clone https://github.com/Godflay/port-scanner.git
 cd port-scanner
-
+```
+```
 python -m venv .venv<br/>
 source .venv/bin/activate
-
+```
+```
 python -m pip install -U pip setuptools wheel
 python -m pip install -e .
-
+```
 ## Usage
 ### run full scan
+```
 port-audit
-
+```
 ### show only exposed services
+```
 port-audit --exposed-only
-
+```
 ### filter by minimum risk level
+```
 port-audit --min-risk medium
-
+```
 ### JSON output
+```
 port-audit --json
-
+```
 ## Exit Codes
+```
 Code	Meaning
 0	    No critical findings<br/>
 2	    One or more critical findings<br/>
 1	    Error during scan or analysis<br/>
-
+```
 ## Example output
 <img width="906" height="108" alt="image" src="https://github.com/user-attachments/assets/20c153ad-3ed7-43f2-a749-dd770b3cbd29" />
 
