@@ -1,7 +1,7 @@
 # Port Audit Scanner
 
 ## What is it?
-A simple Linux-only CLI tool that scans listening network ports and assesses their exposure and risk level.
+A simple Linux-only CLI tool made in python that scans listening network ports and assesses their exposure and risk level.
 
 Built as a small security-oriented utility to quickly answer:
 
