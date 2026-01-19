@@ -112,9 +112,9 @@ port-audit --json
 ## Exit Codes
 ```
 Code	Meaning
-0	    No critical findings<br/>
-2	    One or more critical findings<br/>
-1	    Error during scan or analysis<br/>
+0	    No critical findings
+2	    One or more critical findings
+1	    Error during scan or analysis
 ```
 ## Example output
 <img width="906" height="108" alt="image" src="https://github.com/user-attachments/assets/20c153ad-3ed7-43f2-a749-dd770b3cbd29" />
@@ -124,7 +124,7 @@ Parsing, classification, and risk rules are intentionally decoupled
 
 Scanner logic is isolated from analysis logic
 
-This is not a vulnerability scanner — it’s a visibility and risk-awareness tool.<br/>
+This is not a vulnerability scanner, it’s a visibility and risk-awareness tool.<br/>
 
 ## Limitations
 Relies on ss output(format may vary slightly between distros)<br/>
